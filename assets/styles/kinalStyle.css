@@ -28,6 +28,7 @@ body{
     top: 0;
     position: fixed;
     transition: background-color 0.4s ease-in-out;
+    z-index: 1; 
 }
 .encabezado.scrolled{
     background-color: black;
@@ -83,6 +84,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1; 
 }
 .donarImg{
     height: 17px;
@@ -117,35 +119,42 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-
-    border-radius: 10px;
-    border: 1px solid white;
 }
-.card1{
-    background-color: aqua;
-    width: 200px;
-    height: 300px;
+.card{
+    width: 300px;
+    height: 350px;
     margin: 30px;
 
     border-radius: 20px;
+    position: relative;
 }
-.card2{
-    background-color: rgb(0, 255, 21);
-    width: 200px;
-    height: 300px;
-    margin: 30px;
-
-    border-radius: 20px;
+.c1{
+    background-color: #DB1948;
 }
-.card3{
-    background-color: rgb(255, 0, 34);
-    width: 200px;
-    height: 300px;
-    margin: 30px;
-
-    border-radius: 20px;
+.c2{
+    background-color: #7ED957;
 }
-
+.c3{
+    background-color: #FFCB10;
+}
+.persona1{
+    height: 400px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.persona2{
+    height: 370px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.persona3{
+    height: 425px;
+    position: absolute;
+    right: 0;
+    bottom: -1px;
+}
 .contenedor{
     margin: 30px;
     background-color: black;
@@ -154,4 +163,35 @@ body{
 
     border-radius: 10px;
     border: 1px solid white;
+}
+.footer{
+    width: 100%;
+    height: 200px;
+    padding: 40px;
+
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    border-top: 2px solid white; 
+}
+
+.ft1{
+    width: 40%;
+    text-align: center;
+}
+.ft3{
+    width: 40%;
+    text-align: center;
+    padding: 20px;
+}
+.ftImg{
+    width: 300px;
+}
+.derechos{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    color: #5a5454;
+    padding: 25px;
 }
