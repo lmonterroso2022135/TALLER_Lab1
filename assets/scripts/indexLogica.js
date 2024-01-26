@@ -8,13 +8,16 @@ var tarjeta2 = document.getElementById('tarjeta2');
 var tarjeta3 = document.getElementById('tarjeta3');
 var tarjeta4 = document.getElementById('tarjeta4');
 var tarjeta5 = document.getElementById('tarjeta5');
+var tarjeta6 = document.getElementById('tarjeta6');
+var tarjeta7 = document.getElementById('tarjeta7');
+var tarjeta8 = document.getElementById('tarjeta8');
 
 
 function mostrarContenedor() {
     contenedorAbierto = !contenedorAbierto;
 
     if (contenedorAbierto) {
-        contenedor.style.height = '500px';
+        contenedor.style.height = '430px';
 
         tarjeta1.style.display = 'block';
 
@@ -29,6 +32,9 @@ function mostrarContenedor() {
         tarjeta3.style.display = 'none';
         tarjeta4.style.display = 'none';
         tarjeta5.style.display = 'none';
+        tarjeta6.style.display = 'none';
+        tarjeta7.style.display = 'none';
+        tarjeta8.style.display = 'none';
         botonL.disabled = false;
 
 
@@ -43,7 +49,7 @@ function cambiarR(){
             tarjeta2.style.display = 'block';
             contador++;
             botonL.disabled = false;
-            break;
+        break;
         case 2:
             tarjeta2.style.display = 'none';
             tarjeta3.style.display = 'block';
@@ -57,6 +63,21 @@ function cambiarR(){
         case 4:
             tarjeta4.style.display = 'none';
             tarjeta5.style.display = 'block';
+            contador++;
+            break;
+        case 5:
+            tarjeta5.style.display = 'none';
+            tarjeta6.style.display = 'block';
+            contador++;
+            break;
+        case 6:
+            tarjeta6.style.display = 'none';
+            tarjeta7.style.display = 'block';
+            contador++;
+            break;
+        case 7:
+            tarjeta7.style.display = 'none';
+            tarjeta8.style.display = 'block';
             contador++;
             botonR.disabled = true;
             break;
@@ -83,6 +104,21 @@ function cambiarL(){
         case 5:
             tarjeta5.style.display = 'none';
             tarjeta4.style.display = 'block';
+            contador--;
+            break;
+        case 6:
+            tarjeta6.style.display = 'none';
+            tarjeta5.style.display = 'block';
+            contador--;
+            break;
+        case 7:
+            tarjeta7.style.display = 'none';
+            tarjeta6.style.display = 'block';
+            contador--;
+            break;
+        case 8:
+            tarjeta8.style.display = 'none';
+            tarjeta7.style.display = 'block';
             contador--;
             botonR.disabled = false;
             break;
