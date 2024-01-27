@@ -10,7 +10,7 @@
 
 body{    
     font-family: 'Poppins', sans-serif;
-    background-color:#14141a;
+    background-color:black;
     text-align: center;
 }
 .container{
@@ -67,10 +67,12 @@ body{
     border: 1px; /* opcional, solo para visualizar el contenedor */
     text-align: left; /* opcional, para alinear el contenido del contenedor a la izquierda */
     
-    background-color: #292931;
+    background-color: black;
     border-radius: 10px;
     margin: 50px auto;
     padding: 50px;
+
+    border: 1px solid white;
 }
 
 .imagen {
@@ -106,7 +108,7 @@ body{
     border: 1px; /* opcional, solo para visualizar el contenedor */
     text-align: center;
 
-    background-color: #292931;
+    background-color: black;
     border-radius: 10px;
     margin: 50px auto;
     padding: 50px;
@@ -117,6 +119,8 @@ body{
     margin: 20px auto; /* ajusta según tus necesidades */
     padding: 20px; /* espacio interno para el contenido dentro del contenedor */
     border-radius: 10px;
+
+    border-top: 1px solid white;
 }
 .imagenes {
     display: flex;
@@ -141,21 +145,26 @@ body{
 .seccionB{
     text-align: center;
     color: #fff;
-    background-color: #292931;
+    background-color:   black;
     
-    width: 1500px; /* ajusta según tus necesidades */
-    height: 450px; /* ajusta según tus necesidades */
-    border: 1px; /* opcional, solo para visualizar el contenedor */
+    width: 100%;
+    height: 450px;
+    border: 1px;
     text-align: center;
 
     border-radius: 10px;
     margin: 50px auto;
-    padding: 40px;
+    padding: 10px;
+
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
 }
 .subtitle{
     color: var(--color-title);
     font-size: 2rem;
     margin-bottom: 25px;
+
+
 }
 
 .about__paragraph{
@@ -177,7 +186,7 @@ body{
     justify-items: center;
     width: 260px;
     overflow: hidden;
-    margin: 0 auto;
+    margin: 10px;
 }
 
 .about__icon{
@@ -190,10 +199,12 @@ body{
     margin: 50px auto;
     padding: 20px;
     color: #fff;
-    background-color: #292931;
+    background-color: black;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     text-align: center;
+
+    border: 1px solid white;
 }
 
 form {
@@ -203,21 +214,21 @@ form {
 
 label {
     margin-top: 10px;
-    color: #555;
+    color: black;
 }
 
 input, textarea {
-    background-color: #14141a;
+    background-color: black;
     color: #fff;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #292931;
+    border: 1px solid white;
     border-radius: 8px;
     width: 100%;
 }
 
 button {
-    background-color: #000000;
+    background-color: black;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -229,12 +240,6 @@ button:hover {
     background-color: rgb(215, 45, 45);
 }
 
-seccionE {
-    background-color: #292931;
-    width: 700px;
-    height: 500px;
-}
-
 .boton{
     padding: 10px 20px;
     background-color: #000000; /* Color de fondo del botón (puedes ajustar según tus preferencias) */
@@ -243,4 +248,10 @@ seccionE {
     margin: 10px;
     border-radius: 8px;
 
+    border: 1px solid white;
+    z-index: 1; 
 }
+.boton:hover{
+    background-color: #d40733;
+}
+
