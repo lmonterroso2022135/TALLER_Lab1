@@ -24,7 +24,7 @@ body{
     grid-template-rows: 70px 1fr;
     color: #fff;
     background-color:black;
-    border: 0.5px solid white;
+    border-bottom: 0.5px solid white;
 }
 .nav{
     width: 90%;
@@ -124,7 +124,8 @@ body{
     
 }
 .imagenT2{
-    width: 175px;
+    width: 100px;
+    margin: 20px;
 }
 .tarjeta3{
     /* background-color: #d49d07; */

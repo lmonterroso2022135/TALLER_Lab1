@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,600&display=swap');
+
+*{
+    margin: 0;
+    padding: 10;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{    
+    font-family: 'Poppins', sans-serif;
+    background-color:#14141a;
+    text-align: center;
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+.encabezado{
+    width: 100%;
+    height: 75px;
+    align-items: center;
+    display: grid;
+    grid-template-rows: 70px 1fr;
+    color: #fff;
+    background-color: black;
+
+    top: 0;
+    position: sticky;
+    transition: background-color 0.4s ease-in-out;
+    z-index: 1; 
+
+    border-bottom: 1px solid white;
+}
+.nav{
+    width: 90%;
+    margin: auto;
+    --padding-container: 0;
+    height: 50px;
+    display: flex;
+    align-items: center;
+
+}
+.nav__links{
+    margin-left: auto;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: max-content;
+    gap: 2em;
+}
+.nav__link{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.nav__link:hover{
+    color: #d40733;
+}
+/*AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA*/
+.seccionA {
+    display: flex;
+    width: 800px; /* ajusta según tus necesidades */
+    height: 370px; /* ajusta según tus necesidades */
+    border: 1px; /* opcional, solo para visualizar el contenedor */
+    text-align: left; /* opcional, para alinear el contenido del contenedor a la izquierda */
+    
+    background-color: #292931;
+    border-radius: 10px;
+    margin: 50px auto;
+    padding: 50px;
+}
+
+.imagen {
+    flex-shrink: 0; /* evita que la imagen afecte al tamaño del contenedor */
+    margin-right: 20px; /* ajusta según tus necesidades, agrega margen a la derecha de la imagen */
+}
+
+.imagen img {
+    width: 250px; /* la imagen ocupará el 100% del ancho del contenedor */
+    height: auto; /* se ajusta automáticamente la altura para mantener las proporciones originales */
+}
+.contenido {
+    color: #fff;
+    text-align: center;
+    flex: 1;
+    padding: 20px; /* espaciado interno para el contenido dentro del contenedor */
+}
+.correo{
+    color: #ffffff58;
+}
+/*BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB*/
+
+
+
+
+
+
+/*CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC*/
+.seccionC {
+    color: #fff;
+    width: 100%; /* ajusta según tus necesidades */
+    height: 1500px; /* ajusta según tus necesidades */
+    border: 1px; /* opcional, solo para visualizar el contenedor */
+    text-align: center;
+
+    background-color: #292931;
+    border-radius: 10px;
+    margin: 50px auto;
+    padding: 50px;
+}
+
+.proyecto{
+    text-align: left; 
+    margin: 20px auto; /* ajusta según tus necesidades */
+    padding: 20px; /* espacio interno para el contenido dentro del contenedor */
+    border-radius: 10px;
+}
+.imagenes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; /* ajusta según tus necesidades, agrega espacio entre el texto y las imágenes */
+}
+
+.imagenes img {
+    width: 30%; /* ajusta según tus necesidades */
+    border-radius: 5px; /* redondear las esquinas de las imágenes */
+    transition: filter 0.3s ease;
+}
+.imagenes img:hover {
+    filter: brightness(50%); /* reduce el brillo al 80% cuando el ratón está sobre la imagen */
+}
+
+
+
+
+
+
+.seccionB{
+    text-align: center;
+    color: #fff;
+    background-color: #292931;
+    
+    width: 1500px; /* ajusta según tus necesidades */
+    height: 450px; /* ajusta según tus necesidades */
+    border: 1px; /* opcional, solo para visualizar el contenedor */
+    text-align: center;
+
+    border-radius: 10px;
+    margin: 50px auto;
+    padding: 40px;
+}
+.subtitle{
+    color: var(--color-title);
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+.about__paragraph{
+    line-height: 1.7; 
+}
+
+.about__main{
+    padding-top: 80px;
+    display: grid;
+    width: 90%;
+    margin: 0 auto;
+    gap: 1em;
+    overflow: hidden;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+}
+.about__icons{
+    display: grid;
+    gap: 1em;
+    justify-items: center;
+    width: 260px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.about__icon{
+    width: 40px;
+
+}
+/*DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD*/
+.seccionD {
+    width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    color: #fff;
+    background-color: #292931;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    color: #555;
+}
+
+input, textarea {
+    background-color: #14141a;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #292931;
+    border-radius: 8px;
+    width: 100%;
+}
+
+button {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(215, 45, 45);
+}
+
+seccionE {
+    background-color: #292931;
+    width: 700px;
+    height: 500px;
+}
+
+.boton{
+    padding: 10px 20px;
+    background-color: #000000; /* Color de fondo del botón (puedes ajustar según tus preferencias) */
+    color: rgb(255, 255, 255); /* Color del texto del botón */
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 8px;
+
+}
