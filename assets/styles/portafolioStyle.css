@@ -10,12 +10,22 @@
 
 body{    
     font-family: 'Poppins', sans-serif;
-    background-color:black;
+    background: radial-gradient(circle, rgba(63,177,251,1) 45%, rgba(72,0,255,1) 100%);
     text-align: center;
+
+    
 }
 .container{
     width: 90%;
     margin: auto;
+}
+.contenedorSA{
+    width: 100%;
+    height: 75vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .encabezado{
@@ -60,87 +70,67 @@ body{
     color: #d40733;
 }
 /*AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA*/
-.seccionA {
-    display: flex;
-    width: 800px; /* ajusta según tus necesidades */
-    height: 370px; /* ajusta según tus necesidades */
-    border: 1px; /* opcional, solo para visualizar el contenedor */
-    text-align: left; /* opcional, para alinear el contenido del contenedor a la izquierda */
+.seccionA{
+    width: 800px; 
+    height: 370px; 
+    position: relative;
+
+    bottom: 50px;
+}
+.seccionA .face{
+    width: 100%;
+    height: 100%;
     
-    background-color: black;
+    position: absolute;
+    backface-visibility: hidden;
+
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.1);
+    background-color: #00000046;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    color: #fff;
+
+    border: 1px; 
     border-radius: 10px;
     margin: 50px auto;
     padding: 50px;
-
-    border: 1px solid white;
+    transition: .5s;
+}
+.seccionA .front{
+    transform: perspective(600px) rotateX(0deg);
+    display: flex;
+    text-align: left;
+}
+.seccionA .back{
+    transform: perspective(600px) rotateX(180deg);
+    
+}
+.seccionA:hover .front{
+    transform: perspective(600px) rotateX(180deg);
+}
+.seccionA:hover .back{
+    transform: perspective(600px) rotateX(360deg);
 }
 
 .imagen {
     flex-shrink: 0; /* evita que la imagen afecte al tamaño del contenedor */
-    margin-right: 20px; /* ajusta según tus necesidades, agrega margen a la derecha de la imagen */
+    margin-right: 20px; 
 }
 
 .imagen img {
-    width: 250px; /* la imagen ocupará el 100% del ancho del contenedor */
-    height: auto; /* se ajusta automáticamente la altura para mantener las proporciones originales */
+    width: 250px; 
+    height: auto; 
 }
 .contenido {
     color: #fff;
     text-align: center;
     flex: 1;
-    padding: 20px; /* espaciado interno para el contenido dentro del contenedor */
+    padding: 20px; 
 }
 .correo{
     color: #ffffff58;
 }
 /*BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB*/
-
-
-
-
-
-
-/*CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC*/
-.seccionC {
-    color: #fff;
-    width: 100%; /* ajusta según tus necesidades */
-    height: 1500px; /* ajusta según tus necesidades */
-    border: 1px; /* opcional, solo para visualizar el contenedor */
-    text-align: center;
-
-    background-color: black;
-    border-radius: 10px;
-    margin: 50px auto;
-    padding: 50px;
-}
-
-.proyecto{
-    text-align: left; 
-    margin: 20px auto; /* ajusta según tus necesidades */
-    padding: 20px; /* espacio interno para el contenido dentro del contenedor */
-    border-radius: 10px;
-
-    border-top: 1px solid white;
-}
-.imagenes {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px; /* ajusta según tus necesidades, agrega espacio entre el texto y las imágenes */
-}
-
-.imagenes img {
-    width: 30%; /* ajusta según tus necesidades */
-    border-radius: 5px; /* redondear las esquinas de las imágenes */
-    transition: filter 0.3s ease;
-}
-.imagenes img:hover {
-    filter: brightness(50%); /* reduce el brillo al 80% cuando el ratón está sobre la imagen */
-}
-
-
-
-
-
 
 .seccionB{
     text-align: center;
@@ -152,8 +142,6 @@ body{
     border: 1px;
     text-align: center;
 
-    border-radius: 10px;
-    margin: 50px auto;
     padding: 10px;
 
     border-top: 1px solid white;
@@ -193,6 +181,42 @@ body{
     width: 40px;
 
 }
+/*CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC*/
+.seccionC {
+    color: #fff;
+    width: 100%; 
+    height: 1400px; 
+    border: 1px; 
+    text-align: center;
+
+    background-color: black;
+    margin: 50px auto;
+    padding: 50px;
+}
+
+.proyecto{
+    text-align: left; 
+    margin: 20px auto;
+    padding: 20px;
+
+
+    border-top: 1px solid white;
+}
+.imagenes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.imagenes img {
+    width: 30%; 
+    border-radius: 5px;
+    transition: filter 0.3s ease;
+}
+.imagenes img:hover {
+    filter: brightness(50%); /* reduce el brillo al 80% cuando el ratón está sobre la imagen */
+}
+
 /*DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD*/
 .seccionD {
     width: 800px;
@@ -242,8 +266,8 @@ button:hover {
 
 .boton{
     padding: 10px 20px;
-    background-color: #000000; /* Color de fondo del botón (puedes ajustar según tus preferencias) */
-    color: rgb(255, 255, 255); /* Color del texto del botón */
+    background-color: #000000; 
+    color: rgb(255, 255, 255); 
     cursor: pointer;
     margin: 10px;
     border-radius: 8px;
@@ -255,3 +279,16 @@ button:hover {
     background-color: #d40733;
 }
 
+.derechos{
+    width: 100%;
+    height: 50px;
+
+    margin-top: 25px;
+    padding-top: 10px;
+
+    text-align: center;
+    color: white;
+    background-color: black;
+
+    border-top: 1px solid white;
+}
