@@ -98,7 +98,7 @@ body{
    transition: height 0.5s ease-in-out;
    height: 0;
 
-   background-image: url('/resource/images/fondo.gif');
+   background-image: url('../../resource/images/fondo.gif');
    background-size: cover;
 
 }
